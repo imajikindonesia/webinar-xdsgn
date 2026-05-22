@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XDSGN - Elevate Your Brand</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -49,23 +51,7 @@
             color: white;
         }
     </style>
-
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1481406262409785');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=1481406262409785&ev=PageView&noscript=1"
-    /></noscript>
-    </head>
+</head>
 <body class="antialiased selection:bg-pink-500 selection:text-white">
 
     <header class="relative pt-24 pb-16 px-6 text-center overflow-hidden">
@@ -97,7 +83,7 @@
                 
                 <div class="glass-card rounded-2xl p-6 text-left border-pink-500/30 flex-1 w-full max-sm shadow-lg flex items-center gap-5 relative">
                     <div class="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-[3px] border-pink-400 flex-shrink-0 shadow-[0_0_20px_rgba(244,114,182,0.5)]">
-                        <img src="pembicara.jpg" alt="Brillian Fairiandi" class="w-full h-full object-cover object-top">
+                        <img src="pembicara.webp" alt="Brillian Fairiandi" class="w-full h-full object-cover object-top">
                     </div>
                     <div class="flex-1">
                         <p class="text-[11px] text-pink-400 font-bold uppercase tracking-widest mb-1">Pembicara</p>
@@ -142,14 +128,14 @@
             <div class="glass-card rounded-2xl p-3 relative">
                 <span class="absolute top-5 left-5 bg-slate-800 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wide border border-slate-600 z-10">Before</span>
                 <div class="w-full aspect-[4/3] bg-slate-800 rounded-xl overflow-hidden">
-                   <img src="before.jpeg" alt="Before" class="w-full h-full object-cover">
+                   <img src="before.webp" alt="Before" class="w-full h-full object-cover" loading="lazy">
                 </div>
             </div>
             
             <div class="glass-card rounded-2xl p-3 relative border-pink-500/40 shadow-[0_0_40px_rgba(244,114,182,0.15)] transform md:scale-105">
                 <span class="absolute top-5 left-5 bg-gradient-to-r from-pink-500 to-orange-400 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wide z-10 shadow-lg">After</span>
                 <div class="w-full aspect-[4/3] bg-slate-800 rounded-xl overflow-hidden">
-                   <img src="after.png" alt="After" class="w-full h-full object-cover">
+                   <img src="after.webp" alt="After" class="w-full h-full object-cover" loading="lazy">
                 </div>
             </div>
         </div>
@@ -158,11 +144,11 @@
     <section class="py-8 px-6 max-w-5xl mx-auto">
         <div class="flex flex-col gap-8">
             <div class="w-full rounded-2xl overflow-hidden shadow-[0_0_30px_rgba(244,114,182,0.15)] border border-pink-500/20 glass-card">
-                <img src="materi1.jpg" alt="Materi 1" class="w-full h-auto object-cover">
+                <img src="materi1.webp" alt="Materi 1" class="w-full h-auto object-cover" loading="lazy">
             </div>
             
             <div class="w-full rounded-2xl overflow-hidden shadow-[0_0_30px_rgba(244,114,182,0.15)] border border-pink-500/20 glass-card">
-                <img src="materi2.jpg" alt="Materi 2" class="w-full h-auto object-cover">
+                <img src="materi2.webp" alt="Materi 2" class="w-full h-auto object-cover" loading="lazy">
             </div>
         </div>
     </section>
@@ -267,7 +253,7 @@
             btn.innerText = 'Mengirim Data...';
             btn.disabled = true;
 
-            var scriptURL = 'https://script.google.com/macros/s/AKfycbyIQFAQxT7QBa99vCTLdEPNY2oR9ajRPGMPZdX5Rul18Wr9zA0Qid08CzQuF89zCcEiVw/exec'; 
+            var scriptURL = 'https://script.google.com/macros/s/AKfycbzhD9OWxF3wNZkQry2CsZzUiYDDhnZ6SZEPUMvvwKhI_RVBUz3wR77thxD9ZMbYAzgIIw/exec'; 
             var adminWA = "6285187287500"; 
             
             var formData = new FormData();
@@ -292,12 +278,6 @@
             document.getElementById('mainForm').style.display = 'none';
             document.getElementById('successMsg').style.display = 'block';
             document.getElementById('waLinkContainer').innerHTML = `<a href="${waUrl}" target="_blank" class="inline-block bg-[#25D366] text-white font-bold px-8 py-3 rounded-full mt-4 hover:bg-green-600 transition shadow-lg">Buka WhatsApp Sekarang</a>`;
-            
-            // Trigger Meta Pixel Event "Lead" saat konfirmasi pendaftaran berhasil
-            if (typeof fbq === 'function') {
-                fbq('track', 'Lead');
-            }
-
             window.open(waUrl, '_blank');
         }
     </script>
